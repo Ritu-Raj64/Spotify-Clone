@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="stylesheet" href="stylesheet.css">
+        <link rel="icon" href="./assets/logo.png">
+        <title>Spotify - Web Player</title>
+    </head>
+    <body>
+        <header class="header">
+            <div>
+                <a href="#" id="logo">
+                    <i class="fa-brands fa-spotify"></i>
+                </a>
+            </div>
+            <div class="search-box-container">
+                <div>
+                    <a href="#" class="icon-btn">
+                        <i class="fa-solid fa-house"></i>
+                    </a>
+                </div>
+                <div class="search-box">
+                    <label for="search"> <i class="fa-solid fa-magnifying-glass"></i></label>
+                    <input type="text" id="search" placeholder="What do you want to play?">
+                    <a href="#" class="icon-btn" id="library-btn">
+                            <span>&#9474;</span>
+                        <i class="fa-regular fa-window-restore" id="browse"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="nav-links">
+                <a href="#">Premium</a>
+                <a href="#">Support</a>
+                <a href="#">Download</a>
+                <span>&nbsp;&nbsp;&nbsp;&#9474;&nbsp;&nbsp;&nbsp;</span>
+                <a href="#" class="install">
+                    <i class="fa-regular fa-circle-down"></i>
+                    Install App</a>
+                    <span>&nbsp;&nbsp;</span>
+                <a href="#" class="signup">Sign up</a>
+                <button type="button" class="login">Log in</button>
+            </div>
+        </header>
+        <main class="main">
+            <nav class="navbar">
+                <div class="library">
+                    <div><h3>Your library</h3></div>
+                    <div>
+                        <button type="button">
+                        <i class="fa-solid fa-plus"></i>
+                        <span>Create</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="playlist-container">
+                    <section class="playlist">
+                        <p class="playlist-title">Create your first playlist</p>
+                        <p class="playlist-text">It's easy we'll help you</p>
+                        <button type="button">Create playlists</button>
+                    </section>
+                    <section class="playlist">
+                        <p class="playlist-title">Let's find some podcasts to follow</p>
+                        <p class="playlist-text">we'll keep your updates on new episodes</p>
+                        <button type="button">Browse podcasts</button>
+                    </section>
+                </div>
+                <div class="navbar-link-container">
+                    <div class="navbar-link">
+                        <a href="#">Leagal</a>
+                        &nbsp;
+                        <a href="#">Safety & Privacy center</a>
+                        &nbsp;
+                        <a href="#">Privacy Policy</a>
+                       
+                        <a href="#">Cookies</a>
+                        &nbsp;
+                        <a href="#">About Ads</a>
+                        &nbsp;
+                        <a href="#">Accessibility</a>
+                    </div>
+                    <div>
+                        <a href="#" id="cookies">Cookies</a>
+                        <button type="button" class="globe">
+                            <i class="fa-solid fa-globe"></i> 
+                            <span>&nbsp;English</span>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="content">
+                <div class="heading">
+                    <h2>Trending Songs</h2>
+                    <button type="">Show all</button>
+                </div>
+                <div class="card-container">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./assets/Arj kiya hai.png" alt="Ghar kab Aaoge" class="card-image">
+                            <div class="play-btn"> <i class="fa-solid fa-play"></i></div>
+                        </div>
+                        <p class="card-title">Arj Kiya Hai | Coke Studio Bharat</p>
+                        <p class="card-info"><span>Anuv Jain</span></p>                      
+                    </div>
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./assets/ghar kab aaoge.png" alt="Arj kiya hai" class="card-image">
+                            <div class="play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </div>  
+                        <p class="card-title">Ghar Kab Aaoge (From "BORDER2")</p>
+                        <p class="card-info"><span>Anu malik</span>,<span>Mithoon</span>,<span>Sonu Nigam</span></p>                  
+                    </div>
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./assets/Pal pal.png" alt="Pal Pal" class="card-image">
+                            <div class="play-btn"><i class="fa-solid fa-play"></i> </div> 
+                        </div>
+                        <p class="card-title">Pal Pal Talwiinder Verse</p>
+                        <p class="card-info"><span>Talwiinder</span></p>                  
+                    </div>
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./assets/Not guilty.png" alt="Not guilty" class="card-image">
+                            <div class="play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </div> 
+                        </div>                   
+                        <p class="card-title">Not Guilty</p>
+                        <p class="card-info"><span>Dhandha Nyoliwala</span></p>                        
+                    </div>
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./assets/khat.png" alt="Khat" class="card-image">
+                            <div class="play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </div> 
+                        </div>                      
+                        <p class="card-title">Khat</p>
+                        <p class="card-info"><span>Navjot Ahuja</span></p>                                     
+                    </div>
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./assets/AA23.png" alt="AA23" class="card-image">
+                            <div class="play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </div> 
+                        </div>
+                        <p class="card-title">23 Theme (From"AA23")</p>
+                        <p class="card-info"><span>Anirudh Ravichander</span>,<span>Hector Salamanca</span></p>                  
+                    </div>
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./assets/samjhawan.png" alt="samjhawan" class="card-image">
+                            <div class="play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </div> 
+                        <p class="card-title">samjhawan</p>
+                        <p class="card-info"><span>Jawad Ahamed</span>,<span>Shaarib Toshi</span>,<span>Arijit Singh</span>,<span>Shreya Ghoswal</span></p>                     
+                    </div>
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./assets/ishq chera.png" alt="Ishq De Chehra" class="card-image">
+                            <div class="play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </div> 
+                        </div>
+                        <p class="card-title">Ishq Da Chehra (From "BORDER2") </p>
+                        <p class="card-info"><span>Diljit Dosanjah</span>,<span>Sachet Tandon</span>,<span>Parampara Tandon</span></p>                
+                    </div>
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./assets/sheesa.png" alt="Sheesha" class="card-image">
+                            <div class="play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </div> 
+                        </div>
+                        <p class="card-title">Sheesha</p>
+                        <p class="card-info"><span>Mitta Ror</span>,<span>Sawara Verma</span></p>               
+                    </div>
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./assets/papaoutai.png" alt="Papaoutai-Afro Soul" class="card-image">
+                            <div class="play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </div> 
+                        </div>  
+                        <p class="card-title">Papaoutai-Afro Soul</p>
+                        <p class="card-info"><span>Navjot Ahuja</span></p>                  
+                    </div>
+
+                    <div class="card">
+                        <div class="card-image">
+                             <img src="./assets/mega victory.png" alt="Mega Victory" class="card-image">
+                             <div class="play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </div>
+                        <p class="card-title">Mega Victory Mass Song</p>
+                        <p class="card-info"><span>Bheems Ceciroleo</span>,<span>Nakash Aziz</span>,<span>Vishal Dadlani</span>,<span>Kasarla Shayam</span></p>                
+                    </div>
+                </div>
+
+                <div class="heading">
+                    <h2>Popular Artists</h2>
+                    <button type="">Show all</button>
+                </div>
+                <div class="card-container">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./assets/honey singh" alt="Ghar kab Aaoge" class="card-image" id="artist-profile">
+                            <div class="play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </div>
+                        <p class="card-title">Yo Yo Honey Singh</p>
+                        <p class="card-info"><span>Artist</span></p>                     
+                    </div>
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./assets/ar rahman" alt="Ghar kab Aaoge" class="card-image" id="artist-profile">
+                            <div class="play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </div>
+                        <p class="card-title">A.R. Rahman</p>
+                        <p class="card-info"><span>Artist</span></p>                     
+                    </div>
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./assets/arijit singh" alt="Ghar kab Aaoge" class="card-image" id="artist-profile">
+                            <div class="play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </div>
+                        <p class="card-title">Arijit Singh</p>
+                        <p class="card-info"><span>Artist</span></p>                     
+                    </div>
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./assets/pritam" alt="Ghar kab Aaoge" class="card-image" id="artist-profile">
+                            <div class="play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </div>
+                        <p class="card-title">Pritam</p>
+                        <p class="card-info"><span>Artist</span></p>                     
+                    </div>
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./assets/shreya" alt="Ghar kab Aaoge" class="card-image" id="artist-profile">
+                            <div class="play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </div>
+                        <p class="card-title">Shreya Ghoshal</p>
+                        <p class="card-info"><span>Artist</span></p>                     
+                    </div>
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./assets/sonu nigam" alt="Ghar kab Aaoge" class="card-image" id="artist-profile">
+                            <div class="play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </div>
+                        <p class="card-title">Sonu Nigam</p>
+                        <p class="card-info"><span>Artist</span></p>                     
+                    </div>
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./assets/udit narayan" alt="Ghar kab Aaoge" class="card-image" id="artist-profile">
+                            <div class="play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </div>
+                        <p class="card-title">Udit Narayan</p>
+                        <p class="card-info"><span>Artist</span></p>                     
+                    </div>
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./assets/badsah" alt="Ghar kab Aaoge" class="card-image" id="artist-profile">
+                            <div class="play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </div>
+                        <p class="card-title">BadShah</p>
+                        <p class="card-info"><span>Artist</span></p>                     
+                    </div>
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./assets/atif aslam.jpg" alt="Ghar kab Aaoge" class="card-image" id="artist-profile">
+                            <div class="play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </div>
+                        <p class="card-title">Atif Asalam</p>
+                        <p class="card-info"><span>Artist</span></p>                     
+                    </div>
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./assets/vishal shekhar" alt="Ghar kab Aaoge" class="card-image" id="artist-profile">
+                            <div class="play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </div>
+                        <p class="card-title">Vishal-Shekhar</p>
+                        <p class="card-info"><span>Artist</span></p>                     
+                    </div>
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./assets/lata mangeswar" alt="Ghar kab Aaoge" class="card-image" id="artist-profile">
+                            <div class="play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </div>
+                        <p class="card-title">Lata mangeshkar</p>
+                        <p class="card-info"><span>Artist</span></p>                     
+                    </div>
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./assets/mohammed" alt="Ghar kab Aaoge" class="card-image" id="artist-profile">
+                            <div class="play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </div>
+                        <p class="card-title">Mohammed Rafi</p>
+                        <p class="card-info"><span>Artist</span></p>                     
+                    </div>
+                </div>
+
+                <div class="heading">
+                    <h2>Popular album and singles</h2>
+                    <button type="">Show all</button>
+                </div>
+                <div class="card-container">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./assets/best of romance.png" alt="Best of Romance: Atif aslam & Pritam" class="card-image">
+                            <div class="play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </div>
+                        <p class="card-title">Best of Romance: Atif aslam & Pritam</p>
+                        <p class="card-info"><span>Atif Aslam</span>,<span>Pritam</span></p>                  
+                    </div>
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./assets/glory.png" alt="Glory" class="card-image">
+                            <div class="play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </div>      
+                        <p class="card-title">Glory</p>
+                        <p class="card-info"><span>Yo Yo Honey Singh</span></p>                 
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                             <img src="./assets/arijit sing.png" alt="Ultimate Love Song - Arijit Singh" class="card-image">
+                             <div class="play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </div>
+                        <p class="card-title">Ultimate Love Song - Arijit Singh</p>
+                        <p class="card-info"><span>Arijit Singh</span></p>                   
+                    </div>
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./assets/ranjha.png" alt="Ranjha" class="card-image">
+                             <div class="play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </div>
+                        <p class="card-title">Raanjhan</p>
+                        <p class="card-info"><span>Sachet-Parampara</span>,<span>Prampara Tandon</span></p>                  
+                    </div>
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./assets/aashiqui 2.png" alt="Aashiqui 2" class="card-image">
+                            <div class="play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </div>
+                        <p class="card-title">Aashiqui 2</p>
+                        <p class="card-info"><span>Mithoon</span>,<span>Ankit Tiwari</span>,<span>jeet Gannguali</span></p>                  
+                    </div>
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./assets/ye jawani hai diwani.png" alt="samjhawan" class="card-image">
+                            <div class="play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </div>
+                        <p class="card-title">Ye Jawaani Hai Deewani</p>
+                        <p class="card-info"><span>Pritam</span></p>                  
+                    </div>
+
+                    <div class="card">
+                        <div class="card-image">
+                             <img src="./assets/sanam teri kasam.png" alt="samjhawan" class="card-image">
+                             <div class="play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </div>
+                        <p class="card-title">Sanam Teri Kasam</p>
+                        <p class="card-info"><span>Himesh Reshammiya</span>,<span>Sameer Anjan</span></p>                  
+                    </div>
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./assets/finding her.png" alt="Finding Her" class="card-image">
+                            <div class="play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </div>
+                        <p class="card-title">Finding Her</p>
+                        <p class="card-info"><span>Kushgara</span>,<span>Bharat</span>,<span>Sahel</span></p>                  
+                    </div>
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./assets/young goat.png" alt="young goat" class="card-image">
+                            <div class="play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </div>
+                        <p class="card-title">Young G.O.A.T</p>
+                        <p class="card-info"><span>Cheema Y</span>,<span>Gur Siddu</span></p>                 
+                    </div>
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./assets/making memory.png" alt="making memory" class="card-image">
+                            <div class="play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </div>
+                        <p class="card-title">Making Memories</p>
+                        <p class="card-info"><span>KAran Aujla</span>,<span>Ikky</span></p>                  
+                    </div>
+                </div>
+                <div class="heading">
+                    <h2>Popular Radio</h2>
+                    <button type="">Show all</button>
+                </div>
+
+                <div class="card-container">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./assets/Arijit R.png" alt="Best of Romance: Atif aslam & Pritam" class="card-image">
+                            <div class="play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </div>
+                        <p class="card-info">Sachin-Jigar, Jeet Gannguli, Pritam and...</p>                  
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./assets/kk.png" alt="Best of Romance: Atif aslam & Pritam" class="card-image">
+                            <div class="play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </div>
+                        <p class="card-info">With Pritam, Vishal-Shekhar, Kailash Kher...</p>                  
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./assets/honey R.png" alt="Best of Romance: Atif aslam & Pritam" class="card-image">
+                            <div class="play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </div>
+                        <p class="card-info">With Pritam, Guru Randhawa, Vishal-Shek...</p>                  
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./assets/shreya R.png" alt="Best of Romance: Atif aslam & Pritam" class="card-image">
+                            <div class="play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </div>
+                        <p class="card-info">With A.R. Rahman, Arijit Singh, Atif Aslam and more</p>                  
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./assets/Kishor R.png" alt="Best of Romance: Atif aslam & Pritam" class="card-image">
+                            <div class="play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </div>
+                        <p class="card-info">With Mukesh, Tabassum, Hemant Kumar and more</p>                  
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./assets/diljit R.png" alt="Best of Romance: Atif aslam & Pritam" class="card-image">
+                            <div class="play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </div>
+                        <p class="card-info">With Shubh, AP Dhillon, Sidhu Moose Wala...</p>                  
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./assets/alka R.png" alt="Best of Romance: Atif aslam & Pritam" class="card-image">
+                            <div class="play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </div>
+                        <p class="card-info">With Vinod Rathod, Kumar Sanu, Jatin-Lalit and more</p>                  
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./assets/ar rahman R.png" alt="Best of Romance: Atif aslam & Pritam" class="card-image">
+                            <div class="play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </div>
+                        <p class="card-info">With Arijit Singh, Hariharan, Vishal-Shekhar and more</p>                  
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./assets/siddhu R.png" alt="Best of Romance: Atif aslam & Pritam" class="card-image">
+                            <div class="play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </div>
+                        <p class="card-info">With Shubh, AP Dhillon, Prem Dhillon and more</p>                  
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./assets/Kumar Sanu R.png" alt="Best of Romance: Atif aslam & Pritam" class="card-image">
+                            <div class="play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </div>
+                        <p class="card-info">With Jatin-Lalit, Alka Yagnik, Vinod Rathod...</p>                  
+                    </div>
+                </div>
+                <div class="heading">
+                    <h2>Featured Chart</h2>
+                    <button type="">Show all</button>
+                </div>
+
+                <div class="card-container">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./assets/global.png" alt="Best of Romance: Atif aslam & Pritam" class="card-image">
+                            <div class="play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </div>
+                        <p class="card-info">Your weekly update of the most played tracks right now - Global.</p>                  
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./assets/india.png" alt="Best of Romance: Atif aslam & Pritam" class="card-image">
+                            <div class="play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </div>
+                        <p class="card-info">our weekly update of the most played tracks right now - India.</p>                  
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./assets/global 50.png" alt="Best of Romance: Atif aslam & Pritam" class="card-image">
+                            <div class="play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </div>
+                        <p class="card-info">Your daily update of the most played tracks right now - Global.</p>                  
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./assets/india 50.png" alt="Best of Romance: Atif aslam & Pritam" class="card-image">
+                            <div class="play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </div>
+                        <p class="card-info">Your daily update of the most played tracks right now - India.</p>                  
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./assets/viral 50.png" alt="Best of Romance: Atif aslam & Pritam" class="card-image">
+                            <div class="play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </div>
+                        <p class="card-info">Your daily update of the most viral tracks right now - Global.</p>                  
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./assets/viral 50 indiaa.png" alt="Best of Romance: Atif aslam & Pritam" class="card-image">
+                            <div class="play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </div>
+                        <p class="card-info">Your daily update of the most viral tracks right now - India.</p>                  
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./assets/global.png" alt="Best of Romance: Atif aslam & Pritam" class="card-image">
+                            <div class="play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </div>
+                        <p class="card-info">Your weekly update of the most played tracks right now - Global.</p>                  
+                    </div>
+                </div>
+
+
+                <footer>
+                    <div class="hr-line">
+                        <hr>
+                    </div>
+
+                    <div class="footer">
+                        <div class="footer-link">
+                            <div class="useful-links">
+                                <h4>Company</h4>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Jobs</a></li>
+                                <li><a href="#">For the Record</a></li>
+                            </div>
+                            <div class="useful-links">
+                                <h4>Communities</h4>
+                                <li><a href="#">For Arists</a></li>
+                                <li><a href="#">Devolopers</a></li>
+                                <li><a href="#">Advertising</a></li>
+                                <li><a href="#">Investors</a></li>
+                                <li><a href="#">Vendors</a></li>
+                            </div>
+                            <div class="useful-links">
+                                <h4>Useful links</h4>
+                                <li><a href="#">Supports</a></li>
+                                <li><a href="">Free Mobile App</a></li>
+                                <li><a href="">Popular by Company</a></li>
+                                <li><a href="">Import your music</a></li>                       
+                            </div>
+                            <div class="useful-links">
+                                <h4>Spotify plans</h4>
+                                    <li><a href="#">Premium Lite</a></li>
+                                    <li><a href="">Premium Standard</a></li>
+                                    <li><a href="">Premium Platinum</a></li>
+                                    <li><a href="">Premuim Student</a></li>
+                                    <li><a href="">Spotify Free</a></li>
+                            </div>
+                        </div>
+                        <div class="social-media-container">
+                            <div class="social-media">
+                                <a href="#">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hr-line">
+                        <hr>
+                    </div>
+                    <div class="copyright">
+                        <p><span>&copy;</span> 2026 Spotify AB</p>
+                    </div>
+                </footer>
+            </div>
+        </main>
+        
+    </body>
+</html>
